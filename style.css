@@ -1,0 +1,353 @@
+*, *::before, *::after {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+body {
+	background: url(img/bg.png) repeat-x;
+	background-color: #fff;
+	padding: 0 20px;
+	margin: 0;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	line-height: 25px;
+	color: #333;
+	display: block;
+}
+
+header {
+	width: auto;
+	padding: 0;
+	margin: 0 -20px;
+	display: block;	
+	background: #333;
+	height: 50px;
+}
+
+.center {
+	width: 95%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-name {
+	font-size: 70px;
+	color: #ECECEC;
+	text-shadow: -1px 0 #B3B3B3, 0 1px #B3B3B3, 1px 0 #B3B3B3, 0 -1px #B3B3B3, #020763 0.03em 0.03em;
+	text-align: center;
+	position: relative;
+}
+
+
+.content h3 {
+	font-family: calibri, century, sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+a {
+	color: #08c;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	display: block;
+	float: left;
+	padding: 15px 7px;
+	color: #000;
+	font-size: 20px;	
+	font-weight: bold;
+}
+
+.logo:hover {
+	text-decoration: none;
+}
+
+.nav-bar {	
+	float: left;		
+	padding: 7px 15px;
+	color: #999;
+	display: none;
+}
+
+.nav-bar:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-bar-btn:hover{
+	border: 1px solid #000;		
+}
+
+.nav-bar-btn {
+	display: block;
+	background: #222;
+	margin: 12px 0;
+	height: 25px;
+	width: 35px;
+	float: right;
+	outline: none;
+	background: url(img/menu.png) no-repeat scroll 0 0 transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+ 
+.phones {
+	width: 100%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.phones img{
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+img {
+	display: block;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+}
+
+.list li::before {
+	content: "";
+	display: block;
+	float: left;
+	margin: 5px 10px 0 0;
+	height: 16px;
+	width: 16px;
+	background: url(img/check.png);
+}
+
+.stores{
+	width: 46%;
+	margin: 2%;
+	height: auto;
+	float: left;
+}
+
+.stores img {
+	max-width: 100%;
+	height: auto;
+}
+
+.stores strong, .stores p {
+font-size: 12px;
+}
+
+.stores strong{
+	display: block;
+	margin-top: 20px;
+}
+
+.stores p {
+	margin-top: 0;	
+	padding-right: 10px;
+}
+
+.about, .screenshots, .contact, .home, .contact-form{
+	clear: both;
+	float: left;
+}
+
+.home {
+	display: block;
+	width: 100%;
+	height: 60px;
+	color: #333;
+}
+
+.home h2 {
+	float: left;	
+}
+
+.home::after {
+	content: "";
+	display: block;
+	float: left;
+	margin: 15px 0 0 15px;
+	width: 25px;
+	height: 25px;
+	background: url(img/arrow-top.png);
+}
+
+.screenshot img {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+}
+
+.screenshot {
+	display: block;
+	float: left;
+	margin: 2% 4%;	
+	width: 42%;
+	height: 50%;	
+}
+
+.contact-form{
+	width: 100%;
+}
+
+form p{
+	margin-bottom: 5px;
+}
+
+input, textarea {
+	width: 100%;	
+	border-radius: 2px;
+	border: 1px solid #ccc;
+}
+
+input{
+	height: 25px;
+}
+
+button{
+	background: #0074cc;
+	color: #fff;
+	padding: 7px 10px;
+	border-style: none;
+	border-radius: 3px;
+}
+
+footer{
+	width: 100%;
+	float: left;
+}
+
+.fl {
+	float: left;
+	width: 175px;	
+}
+
+.fr {
+	float: right;
+	width: 150px;	
+}
+
+@media screen and (min-width: 480px) {
+	.contact-group{
+		width: 100%;
+		height: 50px;
+		clear: both;
+	}
+
+	.contact-form p{
+		width: 40%;
+		float: left;
+	}
+
+	.contact-form input {
+		margin: 16px 0;
+	}
+
+	.contact-form input, .contact-form textarea{
+		display: block;
+		float: left;
+		width: 60%;	
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.main-name, .main-text, .discribe, .list{
+		width: 55%;
+		float: right;
+	}
+
+	.main-name::before {
+		content: "";
+		display: block;	
+		width: 76px;
+		height: 94px;
+		position: absolute;
+		top: -25px;
+		left: -30px;		
+		background: url(img/app_icon.png);
+	}
+
+	.phones {
+		width: 40%;
+		float: left;		
+	}
+
+	.stores {
+		width: 25%;		
+		float: right;		
+	}
+
+	#contact-btn {
+		margin: 20px 100px;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+	header {
+		height: 40px;	
+	}
+
+	.logo {
+		padding: 7px 7px;
+		margin-right: 40%;
+	}
+
+	.nav-bar-btn {
+		display: none;
+	}
+
+	.nav-bar {
+		display: block;
+	}
+
+	.main-name::after {
+		content: "Version 1.0";
+		position: absolute;
+		background: #333;
+		border-radius: 3px;
+		padding: 1px 4px 2px;
+		font-size: 11px;		
+		line-height: 14px;
+		width: 15%;
+		color: #fff;		
+		top: 0;
+		left: 440px;
+
+	}
+
+	.phones {
+		width: 40%;
+		height: auto;		
+		float: left;
+	}
+
+	.screenshot {
+		width: 20%;
+		margin: 1% 2.5%;
+	}
+
+	.contact-group p{
+		width: 20%;
+	}
+
+	.contact-group input, .contact-group textarea{
+		width: 80%;
+	}
+
+	.contact, .contact-form{
+		width: 50%;	
+		clear: none;	
+		float: left;
+	}
+} 
+
